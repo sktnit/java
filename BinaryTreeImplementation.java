@@ -1,4 +1,3 @@
-package BinaryTree;
 import java.util.Scanner;
 import java.util.Stack;
 class Node{
@@ -32,10 +31,10 @@ class BinaryTree{
 		}
 	}
 }
-public class BTImplementation {
+public class BinaryTreeImplementation {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		BinaryTree obj=new BinaryTree();
 		int t;
 		Scanner sc=new Scanner(System.in);

@@ -5,7 +5,7 @@ public class FlowControl {
 
         // Argument to the if statement should be Boolean
 
-        int x = 0;
+        // int x = 0;
 
         // if (x) { //Compile time error Argument must be a boolean
         // System.out.println("hello");
@@ -19,63 +19,62 @@ public class FlowControl {
         // System.out.println("hi");
         // }
 
-        if (x == 20) {
-            System.out.println("hello");
-        } else {
-            System.out.println("hi"); // output: hi
-        }
+        // if (x == 20) {
+        // System.out.println("hello");
+        // } else {
+        // System.out.println("hi"); // output: hi
+        // }
 
-        boolean b = false;
-        if (b = true) {
-            System.out.println("hello"); // output: hello
-        } else {
-            System.out.println("hi");
-        }
+        // boolean b = false;
+        // if (b = true) {
+        // System.out.println("hello"); // output: hello
+        // } else {
+        // System.out.println("hi");
+        // }
 
-        b = false;
-        if (b == true) {
-            System.out.println("hello");
-        } else {
-            System.out.println("hi"); // output: hi
-        }
+        // b = false;
+        // if (b == true) {
+        // System.out.println("hello");
+        // } else {
+        // System.out.println("hi"); // output: hi
+        // }
 
         // Without curly braces we can take only one statement under if, but it should
         // not be declarative statement.
 
-        if (true)
-            ; // no output but executed successfully
+        // if (true) ; // no output but executed successfully
 
         // invalid case
         // if(true)
         // int x=10; //Compile time error
 
         // valid case
-        if (true) {
-            int x = 10;
-        }
+        // if (true) {
+        // int x = 10;
+        // }
 
         // 2. switch(options)
 
         // switch argument are byte, short, char, int and wrapper classes (Byte, Short,
         // Character, Integer) and "enum" types are also allowed.
         // string types are also allowed
-        x = 10;
-        switch (x) { // Curly braces are mandatory
+        // x = 10;
+        // switch (x) { // Curly braces are mandatory
 
-            // Both case and default are optional.
-            // Statements inside switch must be under some case (or) default
-            // Case labels should be "compile time constant" otherwise we will get compile
-            // time error
-            // Duplicate case labels are not allowed.
-            // if any case is matched from that case onwards all statements will be executed
-            // until end of the switch (or) break.
-            case 10:
-                System.out.println("10");
-            case 20:
-                System.out.println("20");
-            default:
-                System.out.println("default case");
-        }
+        // Both case and default are optional.
+        // Statements inside switch must be under some case (or) default
+        // Case labels should be "compile time constant" otherwise we will get compile
+        // time error
+        // Duplicate case labels are not allowed.
+        // if any case is matched from that case onwards all statements will be executed
+        // until end of the switch (or) break.
+        // case 10:
+        // System.out.println("10");
+        // case 20:
+        // System.out.println("20");
+        // default:
+        // System.out.println("default case");
+        // }
 
         // invalid case
         // int y = 20;
@@ -184,5 +183,22 @@ public class FlowControl {
         // }
         // System.out.println("hi");
         // }
+
+        // {
+        // final int a=10,b=20;
+        // while(a<b)
+        // {
+        // System.out.println("hello");
+        // }
+        // System.out.println("hi");
+        // } OUTPUT: Compile time error
+
+        // no error: Compiler won't check unreachability in the case of if-else it will
+        // check only in loops
+        if (true) {
+            System.out.println("hello");
+        } else {
+            System.out.println("hi");
+        }
     }
 }

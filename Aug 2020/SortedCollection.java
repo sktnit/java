@@ -24,7 +24,7 @@ public class SortedCollection {
     System.out.println("Usage: java SortedCollection [num1] [num2] [num3] ...");
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws NumberFormateException{
     SortedCollection collection = new SortedCollection();
 
     // in case no arguments show usage to user
@@ -33,16 +33,13 @@ public class SortedCollection {
       return;
     }
 
-    // try catch block to handle NumberFormatException during argument traversal
-    try {
+    
       for (int i = 0; i < args.length; i++) {
         collection.add(Integer.valueOf(args[i])); // first read the arguments as an integer and then call add function
                                                   // of SortedCollection class.
       }
-    } catch (NumberFormatException e) {
       System.out.println("Please enter the Number as an argument");
       showUsage();
-    }
 
     System.out.print("sorted: ");
     for (int i = 0; i < args.length; i++) {
